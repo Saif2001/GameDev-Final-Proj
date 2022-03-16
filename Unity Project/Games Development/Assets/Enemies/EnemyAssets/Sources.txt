@@ -1,0 +1,9 @@
+Animations
+"Basic Motions Free"
+Unity Asset Store : Kevin Iglesias
+https://assetstore.unity.com/packages/3d/animations/basic-motions-free-154271
+
+Model
+"Space Robot Kyle"
+Unity Asset Store : Unity Technologies
+https://assetstore.unity.com/packages/3d/characters/robots/space-robot-kyle-4696
