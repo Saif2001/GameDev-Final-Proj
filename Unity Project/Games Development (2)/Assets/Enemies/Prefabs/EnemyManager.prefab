@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5366075751505825884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5366075751505825887}
+  m_Layer: 0
+  m_Name: MeleeSpawns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5366075751505825887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366075751505825884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5366075752260174657}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5366075751634466450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5366075751634466413}
+  m_Layer: 0
+  m_Name: FlyingSpawns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5366075751634466413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366075751634466450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13, y: 0, z: -32.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5366075752260174657}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5366075752124965978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5366075752124965973}
+  m_Layer: 0
+  m_Name: RangedSpawns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5366075752124965973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366075752124965978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5366075752260174657}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5366075752260174660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5366075752260174657}
+  - component: {fileID: 5366075752260174662}
+  - component: {fileID: 5366075752260174663}
+  m_Layer: 0
+  m_Name: EnemyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5366075752260174657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366075752260174660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5366075751634466413}
+  - {fileID: 5366075751505825887}
+  - {fileID: 5366075752124965973}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5366075752260174662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366075752260174660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d27861c2f5e46f44a61f3842ea96acc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  fieldOfView: 270
+  perceptionRange: 15
+  separationRange: 3
+  avoidanceRayDirections:
+  - {x: 1, y: 0, z: 0}
+  - {x: -1, y: 0, z: 0}
+  - {x: 0, y: 1, z: 0}
+  - {x: 0, y: -1, z: 0}
+  - {x: 1, y: 1, z: 1}
+  - {x: 1, y: -1, z: 1}
+  - {x: -1, y: 1, z: 1}
+  - {x: -1, y: -1, z: 1}
+  playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  combinedLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  maximumSpeed: 7
+  minimumTurningTime: 1
+  flyingSpeedPenalty: 0.5
+  idlingMovementPenalty: 0.3
+  maximumIdlingTimer: 2
+  idlingRadius: 10
+  flyingIdlePoint: {fileID: 0}
+  huntingMovementPenalty: 0.8
+  huntingRadius: 5
+  maximumHuntingTimer: 8
+  attackingMovementPenalty: 0.4
+  attackDamageMelee: 10
+  attackRangeMelee: 3
+  maximumAttackTimerMelee: 0.5
+  maximumMeleeAttackWindupTimer: 0.9
+  maximumMeleeAttackWinddownTimer: 0
+  attackDamageRanged: 5
+  attackRangeRanged: 10
+  maximumAttackTimerRanged: 3
+  maximumRangedAttackWindupTimer: 1.5
+  maximumRangedAttackWinddownTimer: 1.5
+  attackDamageFlying: 5
+  attackRangeFlying: 10
+  maximumAttackTimerFlying: 3
+  maximumFlyingAttackWindupTimer: 1.5
+  maximumFlyingAttackWinddownTimer: 1.5
+  attackForceFlying: 30
+  upperHoveringBound: 6
+  lowerHoveringBound: 4
+  separationWeight: 10
+  cohesionWeight: 3
+  alignmentWeight: 1
+  avoidanceWeight: 200
+  seekingWeight: 3
+  boundsWeight: 5
+  hoveringWeight: 3
+--- !u!114 &5366075752260174663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5366075752260174660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3152293b92dddc14a8d875ae32ccd38e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flyingEnemyPrefab: {fileID: 6466994864590311053, guid: a0990f7ce014bb64a93ba4c9bca9dd74, type: 3}
+  meleeEnemyPrefab: {fileID: 3015757382187886464, guid: c089d55deab1fae43a0ddd408539714f, type: 3}
+  rangedEnemyPrefab: {fileID: 8631723245348625964, guid: 85e5cf16f1fdacf4791617dcedffad11, type: 3}
+  flyingSpawns:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  meleeSpawns:
+  - {fileID: 0}
+  rangedSpawns:
+  - {fileID: 0}
+  enemies: []
