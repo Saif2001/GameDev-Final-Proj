@@ -5,12 +5,14 @@ using UnityEngine;
 public class BossBullets : MonoBehaviour
 {
 
+    //Function to decrement player health when hit by boss bullets
     public Transform Player;
     public int bulletDamage = 20;
 
-    // Start is called before the first frame update
+    // Bullet prefab saved as a trigger.
     private void OnTriggerEnter(Collider other)
     {
+        //If player is hit, decrement health
         if(other.CompareTag("Player") == true)
         {
             Debug.Log("Bullet hit player");
