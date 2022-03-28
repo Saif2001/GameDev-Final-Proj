@@ -300,13 +300,7 @@ public class PlayerController : MonoBehaviour
     // A function to kill the player if their health drops below 0 (or if a key is pressed for debugging purposes)
     public void Die()
     {
-        if (Input.GetKey(KeyCode.L))
-        {   
-            gameOverPanel.SetActive(true);
-            Death.SetTrigger("DeathTrigger"); 
-            Debug.Log("you died");
 
-        }
         if (health <= 0)
         {
             Debug.Log("Died");
@@ -325,15 +319,18 @@ public class PlayerController : MonoBehaviour
 
     // A funciton used ot pause the game
     public void pauseGame()
-    {
+    {   
+        //freeze time ingame
         Time.timeScale = 0f;
+        //unlock cursor to the window
         Cursor.lockState = CursorLockMode.None;
         pausePanel.SetActive(true);
     }
 
     // A function to hide some UI elements (pause menu, etc.) when resuming the game
     public void hideAllUIPanels()
-    {
+    {   
+        //sets all UI canvas panels to false to hide them while playing the game
         Cursor.lockState = CursorLockMode.Locked;
         pausePanel.SetActive(false);
         gameOverPanel.SetActive(false);
@@ -343,24 +340,29 @@ public class PlayerController : MonoBehaviour
     
     // Functions to stop and start time
     public void pauseTime()
-    {
+    {   
+        //freeze time ingame
         Time.timeScale = 0f;
     }
     public void resumeTime()
-    {
+    {   
+        //unfreeze time in game
         Time.timeScale = 1f;
         Debug.Log("resume pressed");
     }
 
     // A function to exit the game
     public void quitGame()
-    {
+    {   
+        //used for UI quit button
         Application.Quit();
     }
 
     public void PlayerRespawn()
-    {
+    {   
+        //Grabs information of the player spawn point location
         GameObject.Find("Player_Scene1").transform.position = GameObject.Find("Player_Scene1").GetComponent<CheckpointSystem>().spawnPoint;
+        //give the player full health and 5 shots in the gun sabre
         GameObject.Find("Player_Scene1").GetComponent<PlayerController>().health = 100;
         GameObject.Find("Player_Scene1").GetComponent<PlayerController>().gunSabreController.charge = 5;
         hideAllUIPanels();
