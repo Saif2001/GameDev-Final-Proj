@@ -13,33 +13,15 @@ public class UIManagerSettings : MonoBehaviour
         //hideAllUIPanels();
     }
 
-    // Update is called once per frame
-/*        private void pauseGame()
-    {
-        Time.timeScale = 0f;
-        Cursor.lockState = CursorLockMode.None;
-        pausePanel.SetActive(true);
-    }
-
-
-
-        public void hideAllUIPanels()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        pausePanel.SetActive(false);
-        gameOverPanel.SetActive(false);
-        winPanel.SetActive(false);
-    }
     
-*/
 
     public void pauseTime()
-    {
+    {   //freeze the game so player
         Time.timeScale = 0f;
     }
 
     public void resumeTime()
-    {
+    {   //unfreeze the game
         Time.timeScale = 1f;
     }
 
